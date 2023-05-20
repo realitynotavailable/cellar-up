@@ -13,7 +13,11 @@
         <meta property="og:type" content="website" />
         <meta content="summary_large_image" name="twitter:card" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href="./css/splide.min.css" rel="stylesheet" type="text/css" />
         <link href="./css/style.css" rel="stylesheet" type="text/css" />
+        <script defer src="libs/inputmask.min.js"></script>
+        <script defer src="libs/just-validate3.3.3.min.js"></script>
+        <script defer src="js/validate.js"></script>
         <style>
             @media (min-width: 992px) {
                 html.w-mod-js:not(.w-mod-ix) [data-w-id="1d5b7cb4-d25a-75ca-63cd-13f7543c9e85"] {
@@ -439,7 +443,7 @@
                         <div class="date__left">
                             <div data-w-id="40b21456-c45a-9d07-7ee4-07db7ef8fb55" class="date__title"><h2 class="h2">КАК ПРОХОДИТ обучение</h2></div>
                             <picture>
-                                <source srcset="./img/mobile__date.jpg" media="(max-width: 479px)">    
+                                <source srcset="./img/mobile__date.png" media="(max-width: 479px)">    
                                 <source srcset="./img/642ed557eba5746a799d5ba2_data.png" media="(min-width: 480px)">
                                 <img src="./img/642ed557eba5746a799d5ba2_data.png" loading="lazy" data-w-id="b2bf64ac-ab84-94f2-72f2-99cad807ad20" alt="astronaut in space" class="date__img" />
                             </picture>
@@ -954,42 +958,44 @@
                             <h2 class="h2">ЭКСПЕРТЫ <span class="text-span-10">И ТРЕКЕРЫ</span></h2>
                         </div>
                         <div data-w-id="6fcfe73c-3448-3c02-6848-2ed4249a533b" class="splide-slide">
-                            <div class="splide__track">
-                                <ul role="list" class="splide__list-slide w-list-unstyled">
-                                    <li class="splide__slide-slide">
-                                        <div class="expert__card">
-                                            <img src="./img/643bef0aaa88cb0fc5405282_expert--1%20(1).jpg" loading="lazy" alt="smiling girl" class="expert__img" />
-                                            <div class="expert__des">
-                                                <div class="title-s expert__title">Анна Костина</div>
-                                                <div class="mb-20"><p class="p__expert">Куратор курса</p></div>
-                                                <p class="course__p">Сертифицированный тренер CompTIA CTT+, ментор TechStars, преподаватель в IThub college.</p>
+                            <div class="splide splide-first" aria-label="Basic Structure Example">
+                                <div class="splide__track">
+                                    <ul role="list" class="splide__list-slide splide__list w-list-unstyled">
+                                        <li class="splide__slide-slide splide__slide">
+                                            <div class="expert__card">
+                                                <img src="./img/643bef0aaa88cb0fc5405282_expert--1%20(1).jpg" loading="lazy" alt="smiling girl" class="expert__img" />
+                                                <div class="expert__des">
+                                                    <div class="title-s expert__title">Анна Костина</div>
+                                                    <div class="mb-20"><p class="p__expert">Куратор курса</p></div>
+                                                    <p class="course__p">Сертифицированный тренер CompTIA CTT+, ментор TechStars, преподаватель в IThub college.</p>
+                                                </div>
+                                                <div class="card__bg"></div>
                                             </div>
-                                            <div class="card__bg"></div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide-slide">
-                                        <div class="expert__card">
-                                            <img src="./img/643bef1d36d40186bc9a8a8d_expert--2%20(1).jpg" loading="lazy" alt="a man" class="expert__img" />
-                                            <div class="expert__des">
-                                                <div class="title-s expert__title">Анна Костина</div>
-                                                <div class="mb-20"><p class="p__expert">Куратор курса</p></div>
-                                                <p class="course__p">Сертифицированный тренер CompTIA CTT+, ментор TechStars, преподаватель в IThub college.</p>
+                                        </li>
+                                        <li class="splide__slide-slide splide__slide">
+                                            <div class="expert__card">
+                                                <img src="./img/643bef1d36d40186bc9a8a8d_expert--2%20(1).jpg" loading="lazy" alt="a man" class="expert__img" />
+                                                <div class="expert__des">
+                                                    <div class="title-s expert__title">Анна Костина</div>
+                                                    <div class="mb-20"><p class="p__expert">Куратор курса</p></div>
+                                                    <p class="course__p">Сертифицированный тренер CompTIA CTT+, ментор TechStars, преподаватель в IThub college.</p>
+                                                </div>
+                                                <div class="card__bg"></div>
                                             </div>
-                                            <div class="card__bg"></div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide-slide">
-                                        <div class="expert__card">
-                                            <img src="./img/643bef3844135a12293f1beb_expert--3%20(1).jpg" loading="lazy" alt="expert girl" class="expert__img" />
-                                            <div class="expert__des">
-                                                <div class="title-s expert__title">Анна Костина</div>
-                                                <div class="mb-20"><p class="p__expert">Куратор курса</p></div>
-                                                <p class="course__p">Сертифицированный тренер CompTIA CTT+, ментор TechStars, преподаватель в IThub college.</p>
+                                        </li>
+                                        <li class="splide__slide-slide splide__slide">
+                                            <div class="expert__card">
+                                                <img src="./img/643bef3844135a12293f1beb_expert--3%20(1).jpg" loading="lazy" alt="expert girl" class="expert__img" />
+                                                <div class="expert__des">
+                                                    <div class="title-s expert__title">Анна Костина</div>
+                                                    <div class="mb-20"><p class="p__expert">Куратор курса</p></div>
+                                                    <p class="course__p">Сертифицированный тренер CompTIA CTT+, ментор TechStars, преподаватель в IThub college.</p>
+                                                </div>
+                                                <div class="card__bg"></div>
                                             </div>
-                                            <div class="card__bg"></div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1007,7 +1013,7 @@
                         </div>
                         <div class="consultation__form">
                             <div data-w-id="00eb66fb-ea3d-4a83-5fbe-cd1d3a1c730d" class="form-block w-form">
-                                <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form">
+                                <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form js-form">
                                     <div class="form__items">
                                         <div class="form__input">
                                             <label for="name" class="field-label">Name</label><input type="text" class="field w-input" maxlength="256" name="name" data-name="Name" placeholder="Фамилия Имя" id="name" />
@@ -1015,16 +1021,17 @@
                                         </div>
                                         <div class="form__input">
                                             <label for="Email-3" class="field-label-2">Email Address</label>
-                                            <input type="email" class="field w-input" maxlength="256" name="Email" data-name="Email" placeholder="E-mail" id="Email-3" required="" />
+                                            <input type="email" class="field w-input" maxlength="256" name="Email" data-name="Email" placeholder="E-mail" id="Email-3" />
                                             <div class="form__line"></div>
                                         </div>
                                         <div class="form__input">
-                                            <label for="Phone" class="field-label-3">Email Address</label><input type="tel" class="field w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Телефон" id="Phone" required="" />
+                                            <label for="Phone" class="field-label-3">Email Address</label>
+                                            <input type="tel" class="field w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Телефон" id="Phone" />
                                             <div class="form__line"></div>
                                         </div>
                                     </div>
                                     <div class="form__send">
-                                        <input type="submit" value="Отправить" data-wait="Please wait..." class="send w-button" />
+                                        <button class="send w-button button" > Отправить</button>
                                         <p class="from__policy">Нажимая на кнопку, вы подтверждаете, что ознакомились и согласны с политикой конфиденциальности</p>
                                     </div>
                                 </form>
@@ -1041,6 +1048,296 @@
                 <div class="container">
                     <div class="tariff__wrap">
                         <div data-w-id="64702f31-a807-86f0-697f-4bbda09899f7" class="mb-44"><h2 class="h2">ТАРИФЫ</h2></div>
+                        <div class="splide splide-second" aria-label="Splide Basic HTML Example">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide tariff__item">
+                                        <div class="mb-15"><div class="title-p tariff__title">БАЗОВЫЙ</div></div>
+                                        <div class="tariff__places">
+                                            <div class="tariff__count">19 / 30 МЕСТ</div>
+                                            <div class="tariff__bg-line"></div>
+                                        </div>
+                                        <div class="tariff-pd">
+                                            <div class="tariff__points">
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 1.  Исследование рынка и продвижение</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 2. Финансы</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 3. Команда</p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">
+                                                        Модуль 4. Привлечение<br />
+                                                        инвестиций
+                                                    </p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 5. Продажи и управление продуктом</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 6. Юридические аспекты</p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 7. Выход на зарубежные рынки</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Курс быстрый старт</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c44a66dea093b9646a8c0_tariff-none.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p text-through">Личная встреча с инвестором</p>
+                                                </div>
+                                            </div>
+                                            <div class="tariff__price">
+                                                <p class="tariff__p d-gray-text">В рассрочку на 12 месяцев:</p>
+                                                <p class="title-s text-shadow">от 17 499 ₽/мес</p>
+                                            </div>
+                                            <div class="tariff__discount">
+                                                <p class="tariff__discount-title text-through">59 999 ₽</p>
+                                                <p class="tariff__price-title gray-text">29 999 ₽</p>
+                                                <p class="d-gray-text">Полная стоимость</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="link-block w-inline-block"><p class="tariff__link">Подать заявку</p></a>
+                                        <div class="tariff__bg"></div>
+                                        <div class="tariff__bg-title">оптимальный</div>
+                                    </li>
+                                    <li class="splide__slide tariff__item">
+                                        <div class="mb-15"><div class="title-p tariff__title">VIP</div></div>
+                                        <div class="tariff__places">
+                                            <div class="tariff__count">7 / 20 МЕСТ</div>
+                                            <div class="tariff__bg-line"></div>
+                                        </div>
+                                        <div class="tariff-pd">
+                                            <div class="tariff__points">
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 1.  Исследование рынка и продвижение</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 2. Финансы</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 3. Команда</p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">
+                                                        Модуль 4. Привлечение <br />
+                                                        инвестиций
+                                                    </p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 5. Продажи и управление продуктом</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 6. Юридические аспекты</p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 7. Выход на зарубежные рынки</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Курс быстрый старт</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643e6a270c67548ea4c9b3e7_tariff-g.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p color-green">Личная встреча с инвестором</p>
+                                                </div>
+                                            </div>
+                                            <div class="tariff__price">
+                                                <p class="tariff__p d-gray-text">В рассрочку на 12 месяцев:</p>
+                                                <p class="title-s text-shadow">от 20 833 ₽/мес</p>
+                                            </div>
+                                            <div class="tariff__discount">
+                                                <p class="tariff__discount-title text-through">329 999 ₽</p>
+                                                <p class="tariff__price-title gray-text">249 999 ₽</p>
+                                                <p class="d-gray-text">Полная стоимость</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="link-block w-inline-block"><p class="tariff__link">Подать заявку</p></a>
+                                        <div class="tariff__bg"></div>
+                                    </li>
+                                    <li class="splide__slide tariff__item">
+                                        <div class="mb-15"><div class="title-p tariff__title">ГРАНТ</div></div>
+                                        <div class="tariff__places">
+                                            <div class="tariff__count">4 / 9 МЕСТ</div>
+                                            <div class="tariff__bg-line"></div>
+                                        </div>
+                                        <div class="tariff-pd">
+                                            <div class="tariff__points">
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 1.  Исследование рынка и продвижение</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 2. Финансы</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 3. Команда</p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">
+                                                        Модуль 4. Привлечение <br />
+                                                        инвестиций
+                                                    </p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 5. Продажи и управление продуктом</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 6. Юридические аспекты</p>
+                                                </div>
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Модуль 7. Выход на зарубежные рынки</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Курс быстрый старт</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c44a66dea093b9646a8c0_tariff-none.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p text-through">Личная встреча с инвестором</p>
+                                                </div>
+                                            </div>
+                                            <div class="tariff__price mb-38">
+                                                <p class="tariff__p d-gray-text">Полная стоимость:</p>
+                                                <p class="title-s text-shadow">БЕСПЛАТНО</p>
+                                            </div>
+                                            <div class="tariff__discount _w-289"><p class="d-gray-text">Необходимо выполнить задание и пройти отбор для прохождения программы по гранту</p></div>
+                                        </div>
+                                        <a href="#" class="link-block w-inline-block"><p class="tariff__link">Подать заявку</p></a>
+                                        <div class="tariff__bg"></div>
+                                    </li>
+                                    <li class="splide__slide tariff__item">
+                                        <div class="mb-15"><div class="title-p tariff__title">МОДУЛЬ</div></div>
+                                        <div class="tariff__places">
+                                            <div class="tariff__count">5 / 30 МЕСТ</div>
+                                            <div class="tariff__bg-line"></div>
+                                        </div>
+                                        <div class="tariff-pd">
+                                            <div class="tariff__points mb-82">
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Один модуль программы</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c44a66dea093b9646a8c0_tariff-none.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p text-through">Курс быстрый старт</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c44a66dea093b9646a8c0_tariff-none.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p text-through">Личная встреча с инвестором</p>
+                                                </div>
+                                            </div>
+                                            <div class="tariff__price">
+                                                <p class="tariff__p d-gray-text">В рассрочку на 12 месяцев:</p>
+                                                <p class="title-s text-shadow">от 2499 ₽/мес</p>
+                                            </div>
+                                            <div class="tariff__discount">
+                                                <p class="tariff__discount-title text-through">59 999 ₽</p>
+                                                <p class="tariff__price-title gray-text">29 999 ₽</p>
+                                                <p class="d-gray-text">Полная стоимость</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="link-block w-inline-block"><p class="tariff__link">Подать заявку</p></a>
+                                        <div class="tariff__bg"></div>
+                                    </li>
+                                    <li class="splide__slide tariff__item">
+                                        <div class="mb-15"><div class="title-p tariff__title">ТРИ МОДУЛЯ</div></div>
+                                        <div class="tariff__places">
+                                            <div class="tariff__count">15 / 30 МЕСТ</div>
+                                            <div class="tariff__bg-line"></div>
+                                        </div>
+                                        <div class="tariff-pd">
+                                            <div class="tariff__points mb-82">
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Три модуля программы</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c44a66dea093b9646a8c0_tariff-none.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p text-through">Курс быстрый старт</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c44a66dea093b9646a8c0_tariff-none.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p text-through">Личная встреча с инвестором</p>
+                                                </div>
+                                            </div>
+                                            <div class="tariff__price">
+                                                <p class="tariff__p d-gray-text">В рассрочку на 12 месяцев:</p>
+                                                <p class="title-s text-shadow">от 7499 ₽/мес</p>
+                                            </div>
+                                            <div class="tariff__discount">
+                                                <p class="tariff__discount-title text-through">119 999 ₽</p>
+                                                <p class="tariff__price-title gray-text">89 999 ₽</p>
+                                                <p class="d-gray-text">Полная стоимость</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="link-block w-inline-block"><p class="tariff__link">Подать заявку</p></a>
+                                        <div class="tariff__bg"></div>
+                                    </li>
+                                    <li class="splide__slide tariff__item">
+                                        <div class="mb-15"><div class="title-p tariff__title">PRO</div></div>
+                                        <div class="tariff__places">
+                                            <div class="tariff__count">2 / 5 МЕСТ</div>
+                                            <div class="tariff__bg-line"></div>
+                                        </div>
+                                        <div class="tariff-pd">
+                                            <div class="tariff__points mb-39">
+                                                <div class="tariff__pont tariff__pont--pos">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Все модули программы</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643c3c6036d4013d3ba17b2f_tariff-p.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p">Курс быстрый старт</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643e6a270c67548ea4c9b3e7_tariff-g.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p color-green">Личная встреча с инвестором</p>
+                                                </div>
+                                                <div class="tariff__pont">
+                                                    <img src="./img/643e6a270c67548ea4c9b3e7_tariff-g.svg" loading="lazy" alt="" class="tariff__img" />
+                                                    <p class="tariff__p color-green">Оплата программы долей</p>
+                                                </div>
+                                            </div>
+                                            <div class="tariff__price">
+                                                <p class="tariff__p d-gray-text">Полная стоимость</p>
+                                                <p class="title-s text-shadow">Оплата долей в проекте*</p>
+                                            </div>
+                                            <div class="tariff__discount mb-23 _w-289">
+                                                <p class="d-gray-text">*Оценка доли производитсяна основании стадии стартапа, необходимо выполнить задание и пройти отбор для прохождения программы по гранту</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="link-block w-inline-block"><p class="tariff__link">Подать заявку</p></a>
+                                        <div class="tariff__bg"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div data-w-id="53358f93-b5d2-c23b-9c3b-f6b6f1371b6b" class="tariff__items">
                             <div class="tariff__item">
                                 <div class="mb-15"><div class="title-p tariff__title">БАЗОВЫЙ</div></div>
@@ -1371,145 +1668,165 @@
                 </div>
                 <div data-w-id="1beccae7-a790-efb1-d213-23a4b7cb3970" class="popup__bg"></div>
             </div>
-            <div data-w-id="904c9327-bfc7-bdeb-037c-7dd2ff548efa" style="opacity: 0; display: none;" class="popup popup__quiz">
+            <div data-w-id="904c9327-bfc7-bdeb-037c-7dd2ff548efa" style="opacity:0; display: none;" class="popup popup__quiz">
                 <div class="popup__content popup__quiz-content">
                     <div class="quiz__form">
                         <div class="form-block-2 w-form">
-                            <form id="wf-form-project" name="wf-form-project" data-name="project" action="mail.php/" method="post" class="form-2">
+                            <form id="wf-form-project" name="wf-form-project" data-name="project" action="mail.php" method="POST" class="form-2 js-form" enctype="multipart/form-data">
                                 <div class="quiz__top">
                                     <div class="_w-633"><p class="quiz__p">Ответьте на несколько вопросов о вашем проекте и оставьте контактные данные для записи на курс “Бизнес акселератор CELLAR-UP”</p></div>
                                     <div class="count-box"><div class="quiz__count">1/4</div></div>
                                 </div>
-                                <div class="quiz__step quiz__step--1">
-                                    <div class="quiz__bottom">
-                                        <div class="mb-39"><div class="quiz__title">На какой стадии находится ваш проект?</div></div>
-                                        <div class="quiz__choose">
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="have-idea" name="step" value="have-idea" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
-                                                <span class="label-text w-form-label" for="have-idea">Имеется идея</span>
-                                            </label>
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="team" name="step" value="team" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
-                                                <span class="label-text w-form-label" for="team">Имеется команда (2-3 человека минимум)</span>
-                                            </label>
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="prototype" name="step" value="prototype" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
-                                                <span class="label-text w-form-label" for="prototype">Имеется прототип</span>
-                                            </label>
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="have-customers" name="step" value="have-customers" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
-                                                <span class="label-text w-form-label" for="have-customers">Имеются первые пользователи, покупатели</span>
-                                            </label>
-                                            <label class="quiz__radio quiz__radio--pos w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="redy-product" name="step" value="redy-product" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
-                                                <span class="label-text w-form-label" for="redy-product">Продукт готов, есть продажи и выручка, задача увеличения доли рынка и развития продукта/технологии</span>
-                                            </label>
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="radio" name="step" value="Radio" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="radio">Другое</span>
-                                            </label>
-                                        </div>
-                                        <div class="quiz__buttons quiz__buttons--pos">
-                                            <a href="#" class="quiz__btn hidden">Назад</a>
-                                            <a href="#" class="quiz__btn w-inline-block">
-                                                <div class="link__text">Далее</div>
-                                                <img loading="lazy" src="./img/6448df80fa9e8905a8a9d24d_arrow-btn.svg" alt="" class="image-5" />
-                                            </a>
-                                        </div>
+                                <div class="splide splide-third" role="group">
+                                    <div class="my-slider-progress">
+                                        <div class="my-slider-progress-bar"></div>
                                     </div>
-                                </div>
-                                <div class="quiz__step quiz__step--2">
-                                    <div class="quiz__bottom">
-                                        <div class="mb-39"><div class="quiz__title">Выберете тариф</div></div>
-                                        <div class="quiz__choose">
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="baza" name="step" value="baza" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="baza">Базовый</span>
-                                            </label>
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="vip" name="step" value="vip" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="vip">VIP</span>
-                                            </label>
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="grant" name="step" value="grant" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="grant">Грант</span>
-                                            </label>
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="pro" name="step" value="pro" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="pro">PRO</span>
-                                            </label>
-                                            <label class="quiz__radio quiz__radio--pos w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="one-of" name="step" value="one-of" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
-                                                <span class="label-text w-form-label" for="one-of">Один из модулей</span>
-                                            </label>
-                                            <label class="quiz__radio w-radio">
-                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
-                                                <input type="radio" id="three" name="step" value="three" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
-                                                <span class="label-text w-form-label" for="three">Три модуля</span>
-                                            </label>
-                                        </div>
-                                        <div class="quiz__buttons">
-                                            <a href="#" class="quiz__btn-prev w-inline-block"><div class="link__text">Назад</div></a>
-                                            <a href="#" class="quiz__btn w-inline-block">
-                                                <div class="link__text">Далее</div>
-                                                <img loading="lazy" src="./img/6448df80fa9e8905a8a9d24d_arrow-btn.svg" alt="" class="image-5" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quiz__step quiz__step--3">
-                                    <div class="quiz__bottom">
-                                        <div class="mb-39"><div class="quiz__title">НЕМНОГО РАССКАЖИТЕ О ВАШЕМ ПРОЕКТЕ</div></div>
-                                        <div class="quiz__choose">
-                                            <div class="quiz__input-box">
-                                                <label for="field" class="quiz__label">Название проекта</label>
-                                                <input type="text" class="quiz__input w-input" maxlength="256" name="field" data-name="Field" placeholder="Название" id="field" required="" />
-                                                <div class="quiz__line"></div>
-                                            </div>
-                                            <div class="quiz__input-box">
-                                                <label for="field-2" class="quiz__label">Суть проекта</label>
-                                                <input type="text" class="quiz__input w-input" maxlength="256" name="project-about" data-name="project-about" placeholder="Проект..." id="project-about" required="" />
-                                                <div class="quiz__line"></div>
-                                            </div>
-                                        </div>
-                                        <div class="quiz__buttons">
-                                            <a href="#" class="quiz__btn quiz__btn-prev w-inline-block"><div class="link__text">Назад</div></a>
-                                            <a href="#" class="quiz__btn w-inline-block">
-                                                <div class="link__text">Далее</div>
-                                                <img loading="lazy" src="./img/6448df80fa9e8905a8a9d24d_arrow-btn.svg" alt="" class="image-5" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quiz__step quiz__step--4">
-                                    <div class="quiz__bottom">
-                                        <div class="mb-39"><div class="quiz__title">ОСТАВЬТЕ ВАШИ КОНТАКТЫ</div></div>
-                                        <div class="quiz__choose">
-                                            <div class="quiz__input-box">
-                                                <label for="field-2" class="quiz__label">Ваше имя и фамилия</label>
-                                                <input type="text" class="quiz__input w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder="Иван Иванов" id="field-2" required="" />
-                                                <div class="quiz__line"></div>
-                                            </div>
-                                            <div class="quiz__input-box">
-                                                <label for="project-about-1" class="quiz__label">Ваш E-mail</label>
-                                                <input type="email" class="quiz__input w-input" maxlength="256" name="project-about-2" data-name="Project About 2" placeholder="example@gmial.com" id="project-about-1" required="" />
-                                                <div class="quiz__line"></div>
-                                            </div>
-                                            <div class="quiz__input-box">
-                                                <label for="project-about-2" class="quiz__label">Ваш телефон</label>
-                                                <input type="tel" class="quiz__input w-input" maxlength="256" name="project-about-2" data-name="Project About 2" placeholder="+7(999)-999-99-99" id="project-about-2" required="" />
-                                                <div class="quiz__line"></div>
-                                            </div>
-                                        </div>
-                                        <div class="quiz__buttons">
-                                            <a href="#" class="quiz__btn-prev w-inline-block"><div class="link__text">Назад</div></a><input type="submit" value="Отправить" data-wait="Пожалуйста, подождите..." class="quiz__btn w-button" />
-                                        </div>
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <div class="quiz__step quiz__step--1">
+                                                    <div class="quiz__bottom">
+                                                        <div class="mb-39"><div class="quiz__title">На какой стадии находится ваш проект?</div></div>
+                                                        <div class="quiz__choose">
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="have-idea" name="step" value="have-idea" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
+                                                                <span class="label-text w-form-label" for="have-idea">Имеется идея</span>
+                                                            </label>
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="team" name="step" value="team" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
+                                                                <span class="label-text w-form-label" for="team">Имеется команда (2-3 человека минимум)</span>
+                                                            </label>
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="prototype" name="step" value="prototype" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
+                                                                <span class="label-text w-form-label" for="prototype">Имеется прототип</span>
+                                                            </label>
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="have-customers" name="step" value="have-customers" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
+                                                                <span class="label-text w-form-label" for="have-customers">Имеются первые пользователи, покупатели</span>
+                                                            </label>
+                                                            <label class="quiz__radio quiz__radio--pos w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="redy-product" name="step" value="redy-product" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
+                                                                <span class="label-text w-form-label" for="redy-product">Продукт готов, есть продажи и выручка, задача увеличения доли рынка и развития продукта/технологии</span>
+                                                            </label>
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="radio" name="step" value="Radio" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="radio">Другое</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="quiz__buttons quiz__buttons--pos">
+                                                            <a href="#" class="quiz__btn hidden js-prev">Назад</a>
+                                                            <a href="#" class="quiz__btn w-inline-block js-next">
+                                                                <div class="link__text">Далее</div>
+                                                                <img loading="lazy" src="./img/6448df80fa9e8905a8a9d24d_arrow-btn.svg" alt="" class="image-5" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="quiz__step quiz__step--2">
+                                                    <div class="quiz__bottom">
+                                                        <div class="mb-39"><div class="quiz__title">Выберете тариф</div></div>
+                                                        <div class="quiz__choose">
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="baza" name="step" value="baza" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="baza">Базовый</span>
+                                                            </label>
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="vip" name="step" value="vip" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="vip">VIP</span>
+                                                            </label>
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="grant" name="step" value="grant" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="grant">Грант</span>
+                                                            </label>
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="pro" name="step" value="pro" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" /><span class="label-text w-form-label" for="pro">PRO</span>
+                                                            </label>
+                                                            <label class="quiz__radio quiz__radio--pos w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="one-of" name="step" value="one-of" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
+                                                                <span class="label-text w-form-label" for="one-of">Один из модулей</span>
+                                                            </label>
+                                                            <label class="quiz__radio w-radio">
+                                                                <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-btn w-radio-input"></div>
+                                                                <input type="radio" id="three" name="step" value="three" data-name="step" style="opacity: 0; position: absolute; z-index: -1;" />
+                                                                <span class="label-text w-form-label" for="three">Три модуля</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="quiz__buttons">
+                                                            <a href="#" class="quiz__btn-prev w-inline-block js-prev"><div class="link__text">Назад</div></a>
+                                                            <a href="#" class="quiz__btn w-inline-block js-next">
+                                                                <div class="link__text">Далее</div>
+                                                                <img loading="lazy" src="./img/6448df80fa9e8905a8a9d24d_arrow-btn.svg" alt="" class="image-5" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="quiz__step quiz__step--3">
+                                                    <div class="quiz__bottom">
+                                                        <div class="mb-39"><div class="quiz__title">НЕМНОГО РАССКАЖИТЕ О ВАШЕМ ПРОЕКТЕ</div></div>
+                                                        <div class="quiz__choose">
+                                                            <div class="quiz__input-box">
+                                                                <label for="field" class="quiz__label">Название проекта</label>
+                                                                <input type="text" class="quiz__input w-input" maxlength="256" name="field" data-name="Field" data-validate-field="name" placeholder="Название" id="field" required="" />
+                                                                <div class="quiz__line"></div>
+                                                            </div>
+                                                            <div class="quiz__input-box">
+                                                                <label for="field-2" class="quiz__label">Суть проекта</label>
+                                                                <input type="text" class="quiz__input w-input" maxlength="256" name="project-about" data-name="project-about" data-validate-field="name" placeholder="Проект..." id="project-about" required="" />
+                                                                <div class="quiz__line"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quiz__buttons">
+                                                            <a href="#" class="quiz__btn quiz__btn-prev w-inline-block js-prev"><div class="link__text">Назад</div></a>
+                                                            <a href="#" class="quiz__btn w-inline-block js-next">
+                                                                <div class="link__text">Далее</div>
+                                                                <img loading="lazy" src="./img/6448df80fa9e8905a8a9d24d_arrow-btn.svg" alt="" class="image-5" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="quiz__step quiz__step--4">
+                                                    <div class="quiz__bottom">
+                                                        <div class="mb-39"><div class="quiz__title">ОСТАВЬТЕ ВАШИ КОНТАКТЫ</div></div>
+                                                        <div class="quiz__choose">
+                                                            <div class="quiz__input-box">
+                                                                <label for="field-2" class="quiz__label">Ваше имя и фамилия</label>
+                                                                <input type="text" class="quiz__input w-input" maxlength="256" name="field-2" data-name="Field 2" data-validate-field="name" placeholder="Иван Иванов" id="field-2" required="" />
+                                                                <div class="quiz__line"></div>
+                                                            </div>
+                                                            <div class="quiz__input-box">
+                                                                <label for="project-about-1" class="quiz__label">Ваш E-mail</label>
+                                                                <input type="email" class="quiz__input w-input" maxlength="256" name="project-about-2" data-name="Project About 2" data-validate-field="email" placeholder="example@gmial.com" id="project-about-1" required="" />
+                                                                <div class="quiz__line"></div>
+                                                            </div>
+                                                            <div class="quiz__input-box">
+                                                                <label for="project-about-2" class="quiz__label">Ваш телефон</label>
+                                                                <input type="tel" class="quiz__input w-input" maxlength="256" name="project-about-2" data-name="Project About 2" data-validate-field="tel" placeholder="+7(999)-999-99-99" id="project-about-2" required="" />
+                                                                <div class="quiz__line"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quiz__buttons">
+                                                            <a href="#" class="quiz__btn-prev w-inline-block js-prev">
+                                                                <div class="link__text">Назад</div>
+                                                            </a>
+                                                            <button class="quiz__btn button">Отправить</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </form>
@@ -1589,11 +1906,13 @@
             <div class="a-planet"></div>
         </div>
         <script
-            src="./js/jquery-3.5.1.min.dc5e7f18c818b6.js"
+            src="./libs/jquery-3.5.1.min.dc5e7f18c818b6.js"
             type="text/javascript"
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"
         ></script>
+        <script src="./libs/splide.min.js" type="text/javascript"></script>
         <script src="./js/script.js" type="text/javascript"></script>
+        <script src="./js/slider.js" type="text/javascript"></script>
     </body>
 </html>

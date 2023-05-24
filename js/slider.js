@@ -31,7 +31,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         breakpoints: {
             479: {
                 perPage: 1,
-                padding: { left: '9%', right: '9%' }
+                padding: { left: '9%', right: '9%' }    
             }
         }
     } );
@@ -44,16 +44,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
         focus  : 'center',
         perMove: 1,
         arrows: false,
-        // classes: {
-        //     // arrows: 'quiz__arrows',
-        //     arrow : 'splide__quiz__arrow',
-        //     prev  : 'splide__quiz__btn-prev',
-        //     next  : 'splide__quiz__btn',
-        // },
         breakpoints: {
             479: {
                 perPage: 1,
-                padding: { left: '9%', right: '9%' }
             }
         }
     } );

@@ -14,7 +14,7 @@ new window.JustValidate('.js-form', {
             const phone = telSelector.inputmask.unmaskedvalue();
             return Number(phone) && phone.length === 10;
         }
-    }
+        }
     },
     colorWrong: '#ff0f0f',
     messages: {
